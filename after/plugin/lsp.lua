@@ -4,20 +4,16 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
 	'lua_ls',
-	'intelephense',
+	'phpactor',
 	'ts_ls',
 	'eslint',
 	'pyright',
 })
 
-lsp.configure('lua-language-server', {
-	settings = {
-		Lua = {
-			diagnostic = {
-				globals = { 'vim' }
-			}
-		}
-	}
+lsp.configure('phpactor', {
+    root_dir = function()
+        return vim.loop.cwd()
+    end
 })
 
 lsp.on_attach(function(client, bufnr)
