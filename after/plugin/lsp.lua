@@ -2,14 +2,6 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
-lsp.ensure_installed({
-	'lua_ls',
-	'phpactor',
-	'ts_ls',
-	'eslint',
-	'pyright',
-})
-
 lsp.configure('phpactor', {
     root_dir = function()
         return vim.loop.cwd()

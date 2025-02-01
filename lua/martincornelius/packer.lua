@@ -5,13 +5,6 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
 
     use('tpope/vim-fugitive')
     use('tpope/vim-commentary')
@@ -42,6 +35,11 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('theprimeagen/harpoon')
+    use('famiu/feline.nvim')
 
     use('folke/tokyonight.nvim')
+    use('rose-pine/neovim')
+    use('thallada/farout.nvim')
+    use('ellisonleao/gruvbox.nvim')
+    use('sainnhe/everforest')
 end)
