@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/farout.nvim",
     url = "https://github.com/thallada/farout.nvim"
   },
-  ["feline.nvim"] = {
-    loaded = true,
-    path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/feline.nvim",
-    url = "https://github.com/famiu/feline.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/friendly-snippets",

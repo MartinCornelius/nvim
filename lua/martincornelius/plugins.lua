@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('theprimeagen/harpoon')
-    use('famiu/feline.nvim')
+    --use('famiu/feline.nvim')
 
     -- Colorschemes
     use('folke/tokyonight.nvim')

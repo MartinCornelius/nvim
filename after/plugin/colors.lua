@@ -1,6 +1,6 @@
 function ColorHaribo(color)
     vim.cmd.colorscheme(color)
-    require('feline').setup()
+--    require('feline').setup()
 end
 ColorHaribo("naysayer")
 --ColorHaribo("tokyonight-night")
