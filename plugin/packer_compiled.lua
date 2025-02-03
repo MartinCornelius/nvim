@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-indent.nvim"] = {
+    loaded = true,
+    path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/auto-indent.nvim",
+    url = "https://github.com/VidocqH/auto-indent.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/cmp-buffer",
