@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  naysayer = {
+    loaded = true,
+    path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/naysayer",
+    url = "https://github.com/alljokecake/naysayer-theme.nvim"
+  },
   neovim = {
     loaded = true,
     path = "/home/cornelius/.local/share/nvim/site/pack/packer/start/neovim",

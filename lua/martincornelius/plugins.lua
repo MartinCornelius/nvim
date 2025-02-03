@@ -37,9 +37,11 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('famiu/feline.nvim')
 
+    -- Colorschemes
     use('folke/tokyonight.nvim')
     use('rose-pine/neovim')
     use('thallada/farout.nvim')
     use('ellisonleao/gruvbox.nvim')
     use('sainnhe/everforest')
+    use ({'alljokecake/naysayer-theme.nvim', as = 'naysayer'})
 end)
