@@ -1,5 +1,5 @@
 vim.opt.guicursor = "" -- removes slim line when in insert mode
-vim.opt.number = true
+--vim.opt.number = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
