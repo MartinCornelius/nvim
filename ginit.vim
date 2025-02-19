@@ -14,4 +14,5 @@ noremap <C-+> :call AdjustFontSize(1)<CR>
 inoremap <C-+> <Esc>:call AdjustFontSize(1)<CR>a
 "inoremap <C-k> <Esc>:call AdjustFontSize(-1)<CR>a
 
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme tokyonight-night

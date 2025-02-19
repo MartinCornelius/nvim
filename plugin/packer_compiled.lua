@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  Zenburn = {
-    loaded = true,
-    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Zenburn",
-    url = "https://github.com/jnurmine/Zenburn"
-  },
   ["betterTerm.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\betterTerm.nvim",
@@ -114,16 +109,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  everforest = {
-    loaded = true,
-    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\everforest",
-    url = "https://github.com/sainnhe/everforest"
-  },
-  ["farout.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\farout.nvim",
-    url = "https://github.com/thallada/farout.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
@@ -153,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  naysayer = {
-    loaded = true,
-    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\naysayer",
-    url = "https://github.com/alljokecake/naysayer-theme.nvim"
   },
   neovim = {
     loaded = true,
