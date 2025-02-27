@@ -1,7 +1,7 @@
 let s:fontsize = 14
 function! AdjustFontSize(amount)
   let s:fontsize = s:fontsize+a:amount
-  :execute "GuiFont! Consolas:h" . s:fontsize
+  :execute "GuiFont! FiraCode Nerd Font Mono:h" . s:fontsize
 endfunction
 
 noremap <C-ScrollWheelUp> :call AdjustFontSize(1)<CR>
@@ -13,6 +13,8 @@ noremap <C-+> :call AdjustFontSize(1)<CR>
 "noremap <C-k> :call AdjustFontSize(-1)<CR>
 inoremap <C-+> <Esc>:call AdjustFontSize(1)<CR>a
 "inoremap <C-k> <Esc>:call AdjustFontSize(-1)<CR>a
+
+set linespace=10
 
 "colorscheme gruvbox
 colorscheme tokyonight-night
