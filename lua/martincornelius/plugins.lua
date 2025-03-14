@@ -9,8 +9,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('tpope/vim-commentary')
     use('townk/vim-autoclose')
-
-    use { 'CRAG666/betterTerm.nvim' }
+    use('nvim-treesitter/nvim-treesitter')
 
     use {
         "VonHeikemen/lsp-zero.nvim",
@@ -42,4 +41,6 @@ return require('packer').startup(function(use)
     use('folke/tokyonight.nvim')
     use('rose-pine/neovim')
     use('ellisonleao/gruvbox.nvim')
+    use('oxfist/night-owl.nvim')
+    use('shaunsingh/nord.nvim')
 end)

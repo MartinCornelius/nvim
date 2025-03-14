@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["betterTerm.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\betterTerm.nvim",
-    url = "https://github.com/CRAG666/betterTerm.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -144,6 +139,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["night-owl.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\night-owl.nvim",
+    url = "https://github.com/oxfist/night-owl.nvim"
+  },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -153,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\Cornelius\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
