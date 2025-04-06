@@ -1,2 +1,3 @@
-vim.cmd [[ colorscheme nord ]]
+-- vim.cmd [[ colorscheme github_dark_default ]]
+vim.cmd [[ colorscheme tokyonight-night ]]
 
