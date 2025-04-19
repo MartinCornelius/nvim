@@ -1,5 +1,5 @@
---vim.opt.guicursor = "" -- removes slim line when in insert mode
-vim.opt.number = true
+vim.opt.guicursor = "" -- removes slim line when in insert mode
+--vim.opt.number = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -20,7 +20,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
 
 -- Keybindings
 vim.g.mapleader = " "
