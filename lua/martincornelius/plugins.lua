@@ -51,6 +51,9 @@ return {
     { "tpope/vim-commentary", event = "VeryLazy" },
     { "townk/vim-autoclose", event = "InsertEnter" },
     { "theprimeagen/harpoon", lazy = true },
+
+    -- Haxe
+    { "kLabz/haxe.vim", lazy = true },
   
     -- Themes (lazy-loaded only if set)
     { "folke/tokyonight.nvim", lazy = false },
