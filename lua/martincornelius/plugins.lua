@@ -53,14 +53,11 @@ return {
     { "theprimeagen/harpoon", lazy = true },
 
     -- Haxe
-    { "kLabz/haxe.vim", lazy = true },
+    { "kLabz/haxe.vim", ft = "haxe" },
   
     -- Themes (lazy-loaded only if set)
     { "folke/tokyonight.nvim", lazy = false },
-    { "rose-pine/neovim", name = "rose-pine", lazy = false },
-    { "ellisonleao/gruvbox.nvim", lazy = false },
-    { "oxfist/night-owl.nvim", lazy = false },
-    { "shaunsingh/nord.nvim", lazy = false },
     { "projekt0n/github-nvim-theme", lazy = false },
+    { "nanotech/jellybeans.vim", lazy = false },
   }
   
