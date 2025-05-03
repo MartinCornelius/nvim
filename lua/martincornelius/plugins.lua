@@ -59,5 +59,6 @@ return {
     { "folke/tokyonight.nvim", lazy = false },
     { "projekt0n/github-nvim-theme", lazy = false },
     { "nanotech/jellybeans.vim", lazy = false },
+    { "Tsuzat/NeoSolarized.nvim", lazy = false },
   }
   
