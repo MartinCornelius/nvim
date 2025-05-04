@@ -22,6 +22,14 @@ return {
         { "<leader>gs", ":Git<CR>", desc = "Git status" },
       }
     },
+    {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require("gitsigns").setup({
+                current_line_blame = true,
+            })
+        end
+    },
   
     -- LSP Zero
     {
@@ -60,5 +68,19 @@ return {
     { "projekt0n/github-nvim-theme", lazy = false },
     { "nanotech/jellybeans.vim", lazy = false },
     { "Tsuzat/NeoSolarized.nvim", lazy = false },
+    { "alljokecake/naysayer-theme.nvim", 
+        lazy = false,
+        config = function()
+            require("naysayer").setup({
+                variant = 'main',
+                dark_variant = 'main',
+                bold_vert_split = false,
+                dim_nc_background = false,
+                disable_background = true,
+                disable_float_background = true,
+                disable_italics = true,
+            })
+        end,
+    }
   }
   
