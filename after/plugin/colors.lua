@@ -1,2 +1,2 @@
-vim.cmd [[ colorscheme jellybeans ]]
+vim.cmd [[ colorscheme github_dark_default ]]
 

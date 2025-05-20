@@ -15,12 +15,30 @@ return {
     },
   
     -- Git
+    -- {
+    --   "tpope/vim-fugitive",
+    --   cmd = { "Git", "G" },
+    --   keys = {
+    --     { "<leader>gs", ":Git<CR>", desc = "Git status" },
+    --   }
+    -- },
+
     {
-      "tpope/vim-fugitive",
-      cmd = { "Git", "G" },
-      keys = {
-        { "<leader>gs", ":Git<CR>", desc = "Git status" },
-      }
+        "kdheepak/lazygit.nvim",
+        lazy = true,
+        cmd = {
+            "LazyGit",
+            "LazyGitConfig",
+            "LazyGitCurrentFile",
+            "LazyGitFilter",
+            "LazyGitFilterCurrentFile",
+        },
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
+        keys = {
+            { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+        }
     },
   
     -- LSP Zero
@@ -51,13 +69,8 @@ return {
     { "tpope/vim-commentary", event = "VeryLazy" },
     { "townk/vim-autoclose", event = "InsertEnter" },
     { "theprimeagen/harpoon", lazy = true },
-
-    -- Haxe
-    { "kLabz/haxe.vim", ft = "haxe" },
   
     -- Themes (lazy-loaded only if set)
-    { "folke/tokyonight.nvim", lazy = false },
     { "projekt0n/github-nvim-theme", lazy = false },
-    { "nanotech/jellybeans.vim", lazy = false },
   }
   
