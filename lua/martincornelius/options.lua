@@ -34,3 +34,4 @@ vim.keymap.set("n", "<leader>f<CR>", "ggVG=")
 
 vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 vim.g.netrw_banner = 0
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
