@@ -44,7 +44,7 @@ return {
     -- LSP Zero
     {
       "VonHeikemen/lsp-zero.nvim",
-      branch = "v1.x",
+      branch = "v2.x",
       dependencies = {
         -- LSP Support
         "neovim/nvim-lspconfig",
@@ -72,5 +72,13 @@ return {
   
     -- Themes (lazy-loaded only if set)
     { "projekt0n/github-nvim-theme", lazy = false },
+
+    -- { "martincornelius/reword.nvim" }
+
+
+    -- DEV
+    {
+      dir="~/Documents/reword.nvim/"
+    }
   }
   
