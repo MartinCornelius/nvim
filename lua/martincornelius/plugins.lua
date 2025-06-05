@@ -72,6 +72,7 @@ return {
   
     -- Themes (lazy-loaded only if set)
     { "projekt0n/github-nvim-theme", lazy = false },
+    { "folke/tokyonight.nvim", lazy = false },
 
     -- { "martincornelius/reword.nvim" }
 
