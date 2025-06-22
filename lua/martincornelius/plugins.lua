@@ -44,6 +44,19 @@ return {
   { "townk/vim-autoclose", event = "InsertEnter" },
   { "theprimeagen/harpoon", lazy = true },
 
+  -- NeoGit
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim"
+    },
+    lazy = true,
+    keys = {
+      { "<leader>gs", "<cmd>Neogit<cr>", desc = "Neogit" }
+    }
+  },
+
   {
     "kdheepak/lazygit.nvim",
     lazy = true,
