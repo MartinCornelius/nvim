@@ -1,10 +1,10 @@
 vim.opt.guicursor = "" -- removes slim line when in insert mode
 --vim.opt.number = true
-vim.opt.cursorline = true
+--vim.opt.cursorline = true
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.smartindent = false
@@ -33,6 +33,5 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "<leader>f<CR>", "ggVG=")
 
-vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 vim.g.netrw_banner = 0
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")

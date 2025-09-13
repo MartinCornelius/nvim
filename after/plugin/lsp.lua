@@ -13,6 +13,8 @@ end)
 
 lsp.setup()
 
+vim.g.python3_host_prog = vim.fn.expand("${workspaceFolder}/venv/env/bin/python")
+
 vim.diagnostic.config({
 	virtual_text = true
 })

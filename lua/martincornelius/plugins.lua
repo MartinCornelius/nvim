@@ -1,20 +1,8 @@
 return {
   -- Core plugins
-  { "nvim-lua/plenary.nvim", lazy = true },
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-
-  -- Telescope (lazy-load on command)
-  {
-    "nvim-telescope/telescope.nvim",
-    cmd = "Telescope",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    version = "0.1.8",
-    config = function()
-      require("telescope").setup()
-    end,
-  },
-  { "nvim-telescope/telescope-ui-select.nvim" },
-
+  { "echasnovski/mini.pick", lazy = false },
+  { "nvim-treesitter/nvim-treesitter" },
+  
   -- LSP Zero
   {
     "VonHeikemen/lsp-zero.nvim",
@@ -42,51 +30,24 @@ return {
   -- Handy utils
   { "tpope/vim-commentary", event = "VeryLazy" },
   { "townk/vim-autoclose", event = "InsertEnter" },
-  { "theprimeagen/harpoon", lazy = true },
 
   -- NeoGit
-  {
-    "NeogitOrg/neogit",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "sindrets/diffview.nvim"
-    },
-    lazy = true,
-    keys = {
-      { "<leader>gs", "<cmd>Neogit<cr>", desc = "Neogit" }
-    }
-  },
-
-  {
-    "kdheepak/lazygit.nvim",
-    lazy = true,
-    cmd = {
-      "LazyGit",
-      "LazyGitConfig",
-      "LazyGitCurrentFile",
-      "LazyGitFilter",
-      "LazyGitFilterCurrentFile",
-    },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-    keys = {
-      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-    }
-  },
-
+  -- {
+  --   "NeogitOrg/neogit",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "sindrets/diffview.nvim"
+  --   },
+  --   lazy = true,
+  --   keys = {
+  --     { "<leader>gs", "<cmd>Neogit<cr>", desc = "Neogit" }
+  --   }
+  -- },
+ 
   -- Themes (lazy-loaded only if set)
   { "projekt0n/github-nvim-theme", lazy = false },
   { "folke/tokyonight.nvim", lazy = false },
   { "rose-pine/neovim", lazy = false },
-  { "rebelot/kanagawa.nvim", lazy = false },
-
-  -- DEV
-  {
-    dir="~/Documents/reword.nvim/"
-  },
-  {
-    dir="~/Documents/tempbuf.nvim/"
-  },
+  { "vague2k/vague.nvim", lazy = false },
 }
 
