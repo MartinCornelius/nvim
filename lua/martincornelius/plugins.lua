@@ -29,25 +29,12 @@ return {
 
   -- Handy utils
   { "tpope/vim-commentary", event = "VeryLazy" },
-  { "townk/vim-autoclose", event = "InsertEnter" },
-
-  -- NeoGit
-  -- {
-  --   "NeogitOrg/neogit",
-  --   dependencies = {
-  --     "nvim-lua/plenary.nvim",
-  --     "sindrets/diffview.nvim"
-  --   },
-  --   lazy = true,
-  --   keys = {
-  --     { "<leader>gs", "<cmd>Neogit<cr>", desc = "Neogit" }
-  --   }
-  -- },
  
   -- Themes (lazy-loaded only if set)
   { "projekt0n/github-nvim-theme", lazy = false },
   { "folke/tokyonight.nvim", lazy = false },
-  { "rose-pine/neovim", lazy = false },
   { "vague2k/vague.nvim", lazy = false },
+  { "ellisonleao/gruvbox.nvim", lazy = false },
+  { "eemed/sitruuna.vim", lazy = false },
 }
 
