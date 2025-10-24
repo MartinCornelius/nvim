@@ -1,4 +1,4 @@
---vim.opt.guicursor = "" -- removes slim line when in insert mode
+vim.opt.guicursor = "" -- removes slim line when in insert mode
 --vim.opt.number = true
 --vim.opt.cursorline = true
 
