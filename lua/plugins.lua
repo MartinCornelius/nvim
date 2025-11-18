@@ -6,5 +6,5 @@ require("lazy").setup({
     { "echasnovski/mini.pick", lazy=false },
 
     { "https://github.com/vague2k/vague.nvim", lazy=false },
-    { "folke/tokyonight.nvim", lazy=false },
+    { "ficcdaf/ashen.nvim", lazy=false },
 })
