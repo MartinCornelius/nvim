@@ -31,3 +31,12 @@ require "vague".setup({
     italic = false,
 })
 vim.cmd("colorscheme vague")
+
+-- LATEX
+vim.api.nvim_create_autocmd("BufWritePost", {
+    pattern = "*.tex",
+    callback = function()
+        local out_dir = "out"
+        vim.cmd("silent !latexmk -pdf -shell-escape")
+    end,
+})
