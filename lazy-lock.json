@@ -4,5 +4,7 @@
   "mason.nvim": { "branch": "main", "commit": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800" },
   "mini.pick": { "branch": "main", "commit": "b4351399db5043a781a32699a1bde60b747f711f" },
   "nvim-lspconfig": { "branch": "master", "commit": "a2bd1cf7b0446a7414aaf373cea5e4ca804c9c69" },
+  "reword.nvim": { "branch": "main", "commit": "55864a50db4bc01f30756cd9199bf1c29f1737de" },
+  "rose-pine": { "branch": "main", "commit": "cf2a288696b03d0934da713d66c6d71557b5c997" },
   "vague.nvim": { "branch": "main", "commit": "dba28050887c2810b5ebf9e0143b4e919bd55757" }
 }

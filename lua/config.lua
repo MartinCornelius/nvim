@@ -27,16 +27,14 @@ vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, op
 vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
 
 -- COLORSCHEME
-require "vague".setup({
-    italic = false,
+-- require "vague".setup({
+--     italic = false,
+-- })
+require "rose-pine".setup({
+    styles = {
+        bold = true,
+        italic = false,
+        transparency = true,
+    },
 })
-vim.cmd("colorscheme vague")
-
--- LATEX
-vim.api.nvim_create_autocmd("BufWritePost", {
-    pattern = "*.tex",
-    callback = function()
-        local out_dir = "out"
-        vim.cmd("silent !latexmk -pdf -shell-escape")
-    end,
-})
+vim.cmd("colorscheme rose-pine")
