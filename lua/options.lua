@@ -26,5 +26,3 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Ignore case for searching
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
-
