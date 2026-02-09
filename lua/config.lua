@@ -11,7 +11,14 @@ require("blink.cmp").setup({
     appearance = {
         use_nvim_cmp_as_default = false,
     },
-    completion = { documentation = { auto_show = false } },
+    completion = { 
+        documentation = { auto_show = false },
+        menu = {
+            draw = {
+                columns = { { "label", "label_description" }, { "kind" } },
+            },
+        },
+    },
     sources = {
         default = { "lsp", "path", "snippets", "buffer" },
     },
@@ -32,7 +39,7 @@ vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
 vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
 vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
 
--- vim.cmd("Copilot disable")
+vim.cmd("Copilot enable")
 
 -- COLORSCHEME
 -- require "vague".setup({
@@ -40,4 +47,4 @@ vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts
 --     bold = true,
 --     italic = false,
 -- })
-vim.cmd("colorscheme default")
+vim.cmd("colorscheme sitruuna")

@@ -9,4 +9,5 @@ require("lazy").setup({
     { "preservim/nerdtree", event = "VeryLazy" },
 
     { "vague2k/vague.nvim", event = "BufWinEnter" },
+    { "eemed/sitruuna.vim", event = "bufWinEnter" },
 })

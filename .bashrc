@@ -4,4 +4,4 @@ export EDITOR='nvim'
 
 alias vim="nvim"
 
-export PS1='\[\e[1;33m\]\w\[\e[0m\]\ % '
+export PS1='\[\e[1;33m\]\w\[\e[0m\] % '
