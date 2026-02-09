@@ -1,4 +1,6 @@
-require "mini.pick".setup()
+local pick = require "mini.pick"
+pick.setup({ source = { show = pick.default_show } }) -- Disable icons
+
 vim.keymap.set("n", "<C-p>", ":Pick files<CR>")
 vim.keymap.set("n", "<leader>fg", ":Pick grep_live<CR>")
 vim.keymap.set("n", "<C-h>", ":Pick help<CR>")
@@ -16,6 +18,10 @@ require("blink.cmp").setup({
     fuzzy = { implementation = "lua" },
 })
 
+-- NERDTREE
+vim.keymap.set("n", "<C-n>", ":NERDTreeToggle<CR>")
+vim.keymap.set("n", "<C-f>", ":NERDTreeFind<CR>")
+
 -- LSP
 require "mason".setup()
 vim.lsp.enable({ "lua_ls", "clangd", "jedi_language_server" })
@@ -26,14 +32,12 @@ vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
 vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
 vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
 
-vim.cmd("Copilot disable")
+-- vim.cmd("Copilot disable")
 
 -- COLORSCHEME
-require "rose-pine".setup({
-    styles = {
-        bold = true,
-        italic = false,
-        transparency = true,
-    },
-})
-vim.cmd("colorscheme rose-pine")
+-- require "vague".setup({
+--     transparent = false,
+--     bold = true,
+--     italic = false,
+-- })
+vim.cmd("colorscheme default")

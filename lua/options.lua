@@ -1,4 +1,4 @@
-vim.opt.guicursor = ""
+--vim.opt.guicursor = ""
 vim.opt.number = true
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
