@@ -47,4 +47,4 @@ vim.cmd("Copilot enable")
 --     bold = true,
 --     italic = false,
 -- })
-vim.cmd("colorscheme halcyon")
+vim.cmd("colorscheme default")
