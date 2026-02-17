@@ -12,6 +12,3 @@ vim.opt.rtp:prepend(lazypath)
 require("options")
 require("plugins")
 require("config")
-
-
---hello there
