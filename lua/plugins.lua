@@ -10,4 +10,8 @@ require("lazy").setup({
 
     { "vague2k/vague.nvim", event = "BufWinEnter" },
     { "eemed/sitruuna.vim", event = "bufWinEnter" },
+    { "EdenEast/nightfox.nvim", event = "bufWinEnter" },
+    { "projekt0n/github-nvim-theme", event = "bufWinEnter" },
+    { "folke/tokyonight.nvim", event = "bufWinEnter" },
+    { "kwsp/halcyon-neovim", event = "bufWinEnter" },
 })

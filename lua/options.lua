@@ -1,4 +1,4 @@
-vim.opt.guicursor = ""
+--vim.opt.guicursor = ""
 vim.opt.mouse = ""
 vim.opt.number = false
 vim.opt.signcolumn = "yes"
