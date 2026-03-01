@@ -7,6 +7,7 @@ require("lazy").setup({
     { "github/copilot.vim" },
 
     { "preservim/nerdtree", event = "VeryLazy" },
+    { "ntpeters/vim-better-whitespace", event = "VeryLazy" },
 
     { "vague2k/vague.nvim", event = "BufWinEnter" },
     { "eemed/sitruuna.vim", event = "bufWinEnter" },
@@ -14,4 +15,5 @@ require("lazy").setup({
     { "projekt0n/github-nvim-theme", event = "bufWinEnter" },
     { "folke/tokyonight.nvim", event = "bufWinEnter" },
     { "kwsp/halcyon-neovim", event = "bufWinEnter" },
+    { "morhetz/gruvbox", event = "bufWinEnter" },
 })
