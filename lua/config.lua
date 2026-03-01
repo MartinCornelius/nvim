@@ -11,7 +11,7 @@ require("blink.cmp").setup({
     appearance = {
         use_nvim_cmp_as_default = false,
     },
-    completion = { 
+    completion = {
         documentation = { auto_show = false },
         menu = {
             draw = {
@@ -31,7 +31,7 @@ vim.keymap.set("n", "<C-f>", ":NERDTreeFind<CR>")
 
 -- LSP
 require "mason".setup()
-vim.lsp.enable({ "lua_ls", "clangd", "jedi_language_server" })
+-- vim.lsp.enable({ "lua_ls", "clangd", "jedi_language_server" })
 
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 vim.keymap.set('n', 'gr', function() vim.lsp.buf.rename() end, opts)
@@ -42,9 +42,9 @@ vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts
 vim.cmd("Copilot enable")
 
 -- COLORSCHEME
--- require "vague".setup({
---     transparent = false,
---     bold = true,
---     italic = false,
--- })
-vim.cmd("colorscheme default")
+require "vague".setup({
+    transparent = false,
+    bold = true,
+    italic = false,
+})
+vim.cmd("colorscheme vague")
