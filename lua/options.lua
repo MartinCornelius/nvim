@@ -18,7 +18,7 @@ vim.opt.backup = false
 vim.opt.hlsearch = false -- highlight search off
 vim.opt.incsearch = true -- incremental search (use *)
 vim.opt.termguicolors = true
---vim.opt.winborder = "rounded"
+vim.opt.winborder = "rounded"
 
 vim.g.mapleader = " "
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

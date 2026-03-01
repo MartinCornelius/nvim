@@ -1,6 +1,5 @@
 local pick = require "mini.pick"
 pick.setup({ source = { show = pick.default_show } }) -- Disable icons
-
 vim.keymap.set("n", "<C-p>", ":Pick files<CR>")
 vim.keymap.set("n", "<leader>fg", ":Pick grep_live<CR>")
 vim.keymap.set("n", "<C-h>", ":Pick help<CR>")
@@ -31,7 +30,7 @@ vim.keymap.set("n", "<C-f>", ":NERDTreeFind<CR>")
 
 -- LSP
 require "mason".setup()
--- vim.lsp.enable({ "lua_ls", "clangd", "jedi_language_server" })
+vim.lsp.enable({ "lua_ls", "clangd", "jedi_language_server" })
 
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 vim.keymap.set('n', 'gr', function() vim.lsp.buf.rename() end, opts)
