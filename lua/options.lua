@@ -3,17 +3,18 @@ vim.opt.mouse = a
 vim.opt.number = false
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
+vim.g.netrw_clipboard = 0
 
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
 vim.g.netrw_winsize = 30
 vim.keymap.set("n", "<C-n>", function()
-  if vim.bo.filetype == "netrw" then
-    vim.cmd("close")
-  else
-    vim.cmd("Lexplore")
-    -- vim.cmd("wincmd L") -- Puts the bar in the right side
-  end
+    if vim.bo.filetype == "netrw" then
+        vim.cmd("close")
+    else
+        vim.cmd("Lexplore")
+        -- vim.cmd("wincmd L") -- Puts window in right side
+    end
 end, { noremap = true, silent = true })
 
 vim.opt.tabstop = 4
