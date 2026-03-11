@@ -24,10 +24,6 @@ require("blink.cmp").setup({
     fuzzy = { implementation = "lua" },
 })
 
--- NERDTREE
-vim.keymap.set("n", "<C-n>", ":NERDTreeToggle<CR>")
-vim.keymap.set("n", "<C-f>", ":NERDTreeFind<CR>")
-
 -- LSP
 require "mason".setup()
 vim.lsp.enable({ "lua_ls", "clangd", "jedi_language_server" })
@@ -38,12 +34,4 @@ vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
 vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
 vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
 
-vim.cmd("Copilot enable")
-
--- COLORSCHEME
-require "vague".setup({
-    transparent = false,
-    bold = true,
-    italic = false,
-})
-vim.cmd("colorscheme vague")
+vim.cmd("colorscheme github_dark_default")
