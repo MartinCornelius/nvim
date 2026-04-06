@@ -1,4 +1,4 @@
---vim.opt.guicursor = ""
+vim.opt.guicursor = ""
 vim.opt.mouse = a
 vim.opt.number = false
 vim.opt.signcolumn = "yes"
@@ -6,7 +6,7 @@ vim.opt.colorcolumn = "80"
 vim.g.netrw_clipboard = 0
 
 vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 3
+vim.g.netrw_liststyle = 1
 vim.g.netrw_winsize = 30
 vim.keymap.set("n", "<C-n>", function()
     if vim.bo.filetype == "netrw" then
@@ -39,3 +39,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Ignore case for searching
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+-- Autocomplete and ui stuff
+vim.o.autocomplete = true
+vim.o.pumborder = 'rounded'
+vim.o.pummaxwidth = 40
+vim.o.completeopt = 'menu,menuone,noselect,nearest'
