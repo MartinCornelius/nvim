@@ -7,6 +7,12 @@ require("mason").setup({})
 -- grx → run codelens
 -- gO → document symbols
 -- Ctrl-S in Insert mode → signature help
+--
+-- Diagnostics:
+-- <C-w>d: Opens the diagnostic message
+-- ]d: Jumps to the next diagnostic.
+-- [d: Jumps to the previous diagnostic.
+-- ]D / [D: Jumps to the last / first diagnostic in the buffer.
 
 -- Python
 vim.lsp.config['jedi-language-server'] = {
@@ -24,3 +30,10 @@ vim.lsp.config['clangd'] = {
 }
 vim.lsp.enable('clangd')
 
+-- Latex
+vim.lsp.config["texlab"] = {
+    cmd = { "texlab" },
+    filetypes = {"tex"},
+    root_markers = {".git"},
+}
+vim.lsp.enable("texlab")

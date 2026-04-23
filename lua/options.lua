@@ -6,7 +6,7 @@ vim.opt.colorcolumn = "80"
 vim.g.netrw_clipboard = 0
 
 vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 1
+vim.g.netrw_liststyle = 0
 vim.g.netrw_winsize = 30
 vim.keymap.set("n", "<C-n>", function()
     if vim.bo.filetype == "netrw" then
