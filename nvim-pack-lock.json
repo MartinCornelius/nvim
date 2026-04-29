@@ -8,9 +8,9 @@
       "rev": "fd7e7efadddcec3f3d7f3b363a99aa44e7286c65",
       "src": "https://github.com/echasnovski/mini.pick"
     },
-    "vague.nvim": {
-      "rev": "fd58046b9d64259d9785e4aeb6d6f494c6943cad",
-      "src": "https://github.com/vague-theme/vague.nvim"
+    "nord.nvim": {
+      "rev": "87394d4fc35c901bbe38326a78d31ab1ead826b6",
+      "src": "https://github.com/gbprod/nord.nvim"
     }
   }
 }

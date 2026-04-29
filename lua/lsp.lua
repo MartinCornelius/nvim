@@ -34,6 +34,13 @@ vim.lsp.config['clangd'] = {
 }
 vim.lsp.enable('clangd')
 
+vim.lsp.config['cmake-language-server'] = {
+    cmd = { 'cmake' },
+    filetypes = { 'cmake' },
+    root_markers = { '.git' },
+}
+vim.lsp.enable('cmake-language-server')
+
 -- Latex
 vim.lsp.config["texlab"] = {
     cmd = { "texlab" },
@@ -41,3 +48,11 @@ vim.lsp.config["texlab"] = {
     root_markers = {".git"},
 }
 vim.lsp.enable("texlab")
+
+-- Go
+vim.lsp.config["gopls"] = {
+    cmd = { "gopls" },
+    filetypes = {"go"},
+    root_markers = {".git"},
+}
+vim.lsp.enable("gopls")
