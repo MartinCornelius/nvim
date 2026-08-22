@@ -1,8 +1,7 @@
 require("mason").setup({})
 -- gra → code actions
 -- gri → implementations
--- grn → rename
--- grr → references
+-- grn → rename grr → references
 -- grt → type definition
 -- grx → run codelens
 -- gO → document symbols
@@ -26,33 +25,45 @@ vim.lsp.config['jedi-language-server'] = {
 }
 vim.lsp.enable('jedi-language-server')
 
--- C++
-vim.lsp.config['clangd'] = {
-    cmd = { 'clangd' },
-    filetypes = { 'cpp' },
-    root_markers = { '.git' },
-}
-vim.lsp.enable('clangd')
+-- Kubernetes / YAML
+vim.lsp.config['yamlls'] = {
+  cmd = { 'yaml-language-server', '--stdio' },
+  filetypes = { 'yaml' },
+  root_markers = { '.git' },
 
-vim.lsp.config['cmake-language-server'] = {
-    cmd = { 'cmake' },
-    filetypes = { 'cmake' },
-    root_markers = { '.git' },
+  settings = {
+    yaml = {
+      schemas = {
+        kubernetes = {
+          '*.yaml',
+          '*.yml',
+        },
+      },
+    },
+  },
 }
-vim.lsp.enable('cmake-language-server')
+vim.lsp.enable('yamlls')
 
--- Latex
-vim.lsp.config["texlab"] = {
-    cmd = { "texlab" },
-    filetypes = {"tex"},
-    root_markers = {".git"},
+-- Terraform
+vim.lsp.config['terraformls'] = {
+  cmd = { 'terraform-ls', 'serve' },
+  filetypes = { 'terraform', 'terraform-vars' },
+  root_markers = { '.terraform', '.git' },
 }
-vim.lsp.enable("texlab")
+vim.lsp.enable('terraformls')
 
--- Go
-vim.lsp.config["gopls"] = {
-    cmd = { "gopls" },
-    filetypes = {"go"},
-    root_markers = {".git"},
+-- Docker
+vim.lsp.config['docker_language_server'] = {
+  cmd = { 'docker-language-server', 'start', '--stdio' },
+  filetypes = {
+    'dockerfile',
+  },
+  root_markers = {
+    'compose.yaml',
+    'compose.yml',
+    'docker-compose.yaml',
+    'docker-compose.yml',
+    '.git',
+  },
 }
-vim.lsp.enable("gopls")
+vim.lsp.enable('docker_language_server')

@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "dracula.nvim": {
+      "rev": "ae752c13e95fb7c5f58da4b5123cb804ea7568ee",
+      "src": "https://github.com/mofiqul/dracula.nvim"
+    },
     "mason.nvim": {
       "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
       "src": "https://github.com/williamboman/mason.nvim"
@@ -7,10 +11,6 @@
     "mini.pick": {
       "rev": "fd7e7efadddcec3f3d7f3b363a99aa44e7286c65",
       "src": "https://github.com/echasnovski/mini.pick"
-    },
-    "nord.nvim": {
-      "rev": "87394d4fc35c901bbe38326a78d31ab1ead826b6",
-      "src": "https://github.com/gbprod/nord.nvim"
     }
   }
 }

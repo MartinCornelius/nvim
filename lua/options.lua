@@ -1,8 +1,8 @@
---vim.opt.guicursor = ""
-vim.opt.mouse = a
-vim.opt.number = true
-vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = "80"
+-- vim.opt.guicursor = ""
+vim.opt.mouse = "" 
+-- vim.opt.number = true
+-- vim.opt.signcolumn = "yes"
+-- vim.opt.colorcolumn = "80"
 vim.g.netrw_clipboard = 0
 
 vim.g.netrw_banner = 0
